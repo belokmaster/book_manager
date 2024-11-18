@@ -1,5 +1,5 @@
 package routes
-// This package is responsible for configuring routes for the web app.
+// this package is responsible for configuring routes for the web app
 import (
 	"github.com/gorrila/mux"
 	"./controllers"
