@@ -1,12 +1,13 @@
 package config
+
 // this package is connect to data base and save data in this db
-import(
+import (
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
 var (
-	db * gorm.DB
+	db *gorm.DB
 )
 
 func Connect() {

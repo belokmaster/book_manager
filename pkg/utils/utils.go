@@ -1,4 +1,5 @@
 package utils
+
 //this package is parsing HTTP request and converting JSON data into a structure
 import (
 	"encoding/json"
@@ -12,7 +13,7 @@ func ParseBody(r *http.Request, x interface{}) {
 		// if everthing is good data is stored in the body variable.
 		if err := json.Unmarshal([]byte(body), x); err != nil {
 			// converts JSON data from the body to the structure pointed to x
-			return 
+			return
 			// if an error occurs during reading or deserialization the function terminates execution
 		}
 	}

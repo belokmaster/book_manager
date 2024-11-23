@@ -1,9 +1,9 @@
 package routes
+
 // this package is responsible for configuring routes for the web app
 import (
+	"github.com/belokmaster/book_manager/pkg/controllers"
 	"github.com/gorrila/mux"
-	"./controllers"
-
 )
 
 var RegisterBookStoreRouter = func(router *mux.Router) {
